@@ -1,0 +1,186 @@
+{
+	"on/off": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setmouselock1",
+				"scriptName": "SetMouseLock",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"invert": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "invertx3",
+				"scriptName": "InvertX",
+				"highlight": false
+			},
+			{
+				"c2id": 4,
+				"id": "inverty4",
+				"scriptName": "InvertY",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"advanced": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 5,
+				"id": "setcursorspeed5",
+				"scriptName": "SetCursorSpeed",
+				"highlight": false,
+				"params": [
+					{"id":"cursor_speed0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "setcustomlockactivatekey9",
+				"scriptName": "SetCustomLockActivateKey",
+				"highlight": false,
+				"params": [
+					{"id":"custom_lock_activate_key0", "type":"keyb"}
+				]
+			},
+			{
+				"c2id": 10,
+				"id": "setlockedcursorxposition10",
+				"scriptName": "SetLockedCursorXPosition",
+				"highlight": false,
+				"params": [
+					{"id":"x_position0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "setlockedcursoryposition11",
+				"scriptName": "SetLockedCursorYPosition",
+				"highlight": false,
+				"params": [
+					{"id":"y_position0", "type":"number"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"status_conditions": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "issupported0",
+				"scriptName": "IsSupported",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "islocked1",
+				"scriptName": "IsLocked",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "ismoving2",
+				"scriptName": "IsMoving",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"trigger_conditions": {
+		"conditions": [
+			{
+				"c2id": 3,
+				"id": "onlock3",
+				"scriptName": "OnLock",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 4,
+				"id": "onunlock4",
+				"scriptName": "OnUnlock",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"raw_input": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "rawx1",
+				"expressionName": "RawX",
+				"scriptName": "RawX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 2,
+				"id": "rawy2",
+				"expressionName": "RawY",
+				"scriptName": "RawY",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"default_input": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 3,
+				"id": "mouselockx3",
+				"expressionName": "MouseLockX",
+				"scriptName": "MouseLockX",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 4,
+				"id": "mouselocky4",
+				"expressionName": "MouseLockY",
+				"scriptName": "MouseLockY",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 5,
+				"id": "movementangle5",
+				"expressionName": "MovementAngle",
+				"scriptName": "MovementAngle",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

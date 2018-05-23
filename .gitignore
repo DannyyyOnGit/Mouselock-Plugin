@@ -1,0 +1,14 @@
+
+\.idea/
+
+releases/
+
+versions/**
+
+*.c2addon
+
+*.c3addon
+
+*.autosave
+
+*.backup1

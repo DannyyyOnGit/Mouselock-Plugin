@@ -1,0 +1,172 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Simple Mouselock.",
+	"text": {
+		"plugins": {
+			"armaldio_mouse_lock": {
+				"name": "Simple Mouselock",
+				"description": "Allows native-like pointer locking for your projects and games.",
+				"help-url": "https://www.scirra.com/forum/new-simple-native-like-mouselocking-plugin_t199484",
+				"properties": {
+					"activate-on": {
+						"name": "Activate On",
+						"desc": "Setting this to \"None\" will only let you enable locking using the actions. \"Any click\" will enable locking as soon as you click on the canvas. \"Custom key\" allows you to define a key below or use the action to define a custom key.",
+						"items": {
+							"none":"None",
+							"any click":"Any click",
+							"custom key":"Custom key"
+							}
+						},
+					"custom-key": {
+						"name": "Custom Key",
+						"desc": "If Activate On \"Custom key\" is selected, you can define a key based on the JS keycode system here (keycode list: https://goo.gl/A2D8Rd). WARNING: Setting a custom key using the action will override this!"
+						},
+					"bounding": {
+						"name": "Bounding",
+						"desc": "Options to bound to the window or the current layout. Unbounded is for infinite mouse movement not limited by the edge of the screen.",
+						"items": {
+							"bound to window":"Bound to Window",
+							"bound to layout":"Bound to Layout",
+							"unbounded":"Unbounded"
+							}
+						},
+					"auto-enable-on-out-of-focus": {
+						"name": "Auto-enable on out of focus",
+						"desc": "If enabled, will auto-enable mouselock when the game is back in focus again (e.g. switched tabs, minimized).",
+						"items": {
+							"false":"False",
+							"true":"True"
+							}
+						},
+					"invert-x": {
+						"name": "Invert X",
+						"desc": "Invert X axis movement.",
+						"items": {
+							"false":"False",
+							"true":"True"
+							}
+						},
+					"invert-y": {
+						"name": "Invert Y",
+						"desc": "Invert Y axis movement.",
+						"items": {
+							"false":"False",
+							"true":"True"
+							}
+						},
+					"cursor-speed": {
+						"name": "Cursor Speed",
+						"desc": "How fast cursor moves in relation to normal cursor speed. 2 would be twice as fast, 0.5 half as fast and so on."
+						}
+				},
+				"aceCategories": {
+					"on/off": "On/Off",
+					"invert": "Invert",
+					"advanced": "Advanced",
+					"status_conditions": "Status Conditions",
+					"trigger_conditions": "Trigger Conditions",
+					"raw_input": "Raw Input",
+					"default_input": "Default Input"
+				},
+				"conditions": {
+					"issupported0": {
+						"list-name": "Is supported",
+						"display-text": "Mouse Lock is supported",
+						"description": "True if mouse locking is supported."
+						},
+					"islocked1": {
+						"list-name": "Is locked",
+						"display-text": "Mouse is currently locked",
+						"description": "True if mouse is locked."
+						},
+					"ismoving2": {
+						"list-name": "Is moving",
+						"display-text": "Mouse is moving",
+						"description": "True if mouse is moving."
+						},
+					"onlock3": {
+						"list-name": "On Lock",
+						"display-text": "On Mouse Lock",
+						"description": "Triggered when mouse is locked."
+						},
+					"onunlock4": {
+						"list-name": "On Unlock",
+						"display-text": "On Mouse Unlock",
+						"description": "Triggered when mouse is unlocked."
+						}
+				},
+				"actions": {
+					"setmouselock1": {
+						"list-name": "Set Mouse Lock",
+						"display-text": "{0} Mouse Lock",
+						"description": "Manually enable/disable the mouse lock."
+					},
+					"invertx3": {
+						"list-name": "Invert X Axis",
+						"display-text": "Invert X Axis is {0}",
+						"description": "Set property Invert X Axis."
+					},
+					"inverty4": {
+						"list-name": "Invert Y Axis",
+						"display-text": "Invert Y Axis is {0}",
+						"description": "Set property Invert Y Axis."
+					},
+					"setcursorspeed5": {
+						"list-name": "Set Cursor Speed",
+						"display-text": "Set Cursor Speed to {0}",
+						"description": "Set property Cursor Speed.",
+						"params": {
+							"cursor_speed0": { "name":"Cursor Speed", "desc":"Set the cursor speed."}
+						}
+					},
+					"setcustomlockactivatekey9": {
+						"list-name": "Mouse Lock on Custom Key",
+						"display-text": "Set Custom Lock Activate Key to [b]{0}[/b].",
+						"description": "Choose a custom key to activate mouse lock.\n\"Activate On\" must be set to \"Custom Key\" for this to work.",
+						"params": {
+							"custom_lock_activate_key0": { "name":"Custom Lock Activate Key", "desc":"Choose a custom key to activate mouse lock.\n\"Activate On\" must be set to \"Custom Key\" for this to work."}
+						}
+					},
+					"setlockedcursorxposition10": {
+						"list-name": "Set Locked Cursor X Position",
+						"display-text": "Set Locked Cursor X Position to {0}",
+						"description": "Set property Locked Cursor X Position.",
+						"params": {
+							"x_position0": { "name":"X Position", "desc":"X Position"}
+						}
+					},
+					"setlockedcursoryposition11": {
+						"list-name": "Set Locked Cursor Y Position",
+						"display-text": "Set Locked Cursor Y Position to {0}",
+						"description": "Set property Locked Cursor Y Position.",
+						"params": {
+							"y_position0": { "name":"Y Position", "desc":"Y Position"}
+						}
+					}
+				},
+				"expressions": {
+					"rawx1": {
+						"description": "(X axis) Raw mouse position change from last tick.",
+						"translated-name": "RawX"
+						},
+					"rawy2": {
+						"description": "(Y axis) Raw mouse position change from last tick.",
+						"translated-name": "RawY"
+						},
+					"mouselockx3": {
+						"description": "(X axis) Mouse position on current layer or layout.",
+						"translated-name": "MouseLockX"
+						},
+					"mouselocky4": {
+						"description": "(Y axis) Mouse position on current layer or layout.",
+						"translated-name": "MouseLockY"
+						},
+					"movementangle5": {
+						"description": "Cursor\"s angle of movement. Computed from last two or three positions. If no movement, returns -1.",
+						"translated-name": "MovementAngle"
+						}
+				}
+			}
+		}
+	}
+}

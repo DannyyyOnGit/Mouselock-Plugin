@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Simple Mouselock",
+	"id": "armaldio_mouse_lock",
+	"version": "2.0.0.0",
+	"author": "Armaldio",
+	"website": "https://www.scirra.com/forum/new-simple-native-like-mouselocking-plugin_t199484",
+	"documentation": "https://www.scirra.com/forum/new-simple-native-like-mouselocking-plugin_t199484",
+	"description": "Allows native-like pointer locking for your projects and games.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}
