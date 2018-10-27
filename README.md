@@ -19,5 +19,4 @@ https://github.com/TobyReeno/c2-addon-assistant
 - Addon tested by *TheRealDannyyy*
 - Addon website: https://goo.gl/EJ8Kru
 
-*THIS ADDON IS CONSIDERED TO BE **FINISHED** BY THE DEVELOPER, IT MIGHT ONLY RECEIVE BUGFIXES IN THE FUTURE!*
-*(New features and modifications can always be added by 3rd parties by using the "pull requests".)*
+*THIS ADDON IS CONSIDERED TO BE **FINISHED** BY THE DEVELOPER, IT MIGHT ONLY RECEIVE BUGFIXES IN THE FUTURE!* *(New features and modifications can always be added by 3rd parties by using the "pull requests" features of GitHub.)*
