@@ -1,4 +1,4 @@
-# Simple Mouselock
+# Simple Mouselock [Deprecated]
 Use native-like pointer locking in your Construct projects.
 
 # Featured Highlights
