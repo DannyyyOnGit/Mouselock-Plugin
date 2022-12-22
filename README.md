@@ -7,7 +7,7 @@
 
 # Supported Engines
 - [X] Construct 2 (r217+)
-- [ ] Constuct 3 (Unfinished/Experimental)
+- [ ] Construct 3 (Unfinished/Experimental)
 
 # Contributions & References
 - Addon re-written and optimized by [@Armaldio](https://github.com/Armaldio)
