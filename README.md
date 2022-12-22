@@ -1,5 +1,4 @@
-# Simple Mouselock
-Use native-like pointer locking in your Construct projects.
+![header](https://github.com/DannyyyOnGit/Mouselock-Plugin/blob/master/Distribution/header.png)
 
 # Featured Highlights
 - Pointer locking with multiple bounding options
